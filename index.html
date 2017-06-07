@@ -25,7 +25,10 @@
               </p>
             </div>
             <div class="card-content white">
-              <form class="" action="https://script.google.com/macros/s/AKfycbx-A9KrzrzPwJtw3FdxZKNT0kjJImlJMDzwfywvr9BM3yjkgA/exec" method="post">
+              <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbyyLHRC6VUxF9-srQdKRz8idEAumWSuGDGVp-D82QSXO2HClVI/exec" method="POST">
+                <input type="hidden" value="" name="fileContent" id="fileContent">
+                <input type="hidden" value="" name="filename" id="filename">
+
                 <div class="input-field">
                   <!-- <input id="name" type="text" class="validate" name="name" style="border-bottom: 1px solid black !important; box-shadow: 0 1px 0 0 black !important"> -->
                   <input id="name" type="text" class="validate" name="name" required>
@@ -35,6 +38,11 @@
                 <div class="input-field">
                   <input id="last_name" type="text" class="validate" name="last_name" required>
                   <label for="last_name">Apellido</label>
+                </div>
+                <br>
+                <div class="input-field">
+                  <input id="email" type="text" class="validate" name="email" required>
+                  <label for="email">email</label>
                 </div>
                 <br>
                 <div class="row">
@@ -48,65 +56,6 @@
                   </div>
                 </div>
                 <br>
-                <h4>¿Qué programa estás cursando?</h4>
-                <!-- <h4>¿Cual es tu nivel nija?</h4> -->
-                <br>
-                <h5>Basico</h5>
-                <p>
-                  <input type="radio" class="with-gap" id="cinta_blanca" name="cinta" value="cinta_blanca"/>
-                  <label for="cinta_blanca">
-                    CINTA BLANCA
-                  </label>
-                </p>
-                <br>
-                <h5>Intermedio</h5>
-                <p>
-                  <input type="radio" class="with-gap" id="cinta_roja" name="cinta" value="cinta_roja"/>
-                  <label for="cinta_roja">
-                    CINTA ROJA
-                  </label>
-                </p>
-                <br>
-                <h5>Avanzados</h5>
-                <p>
-                  <input type="radio" class="with-gap" id="frontend" name="cinta" value="frontend"/>
-                  <label for="frontend">
-                    CINTA NEGRA FRONTEND
-                  </label>
-                </p>
-                <p>
-                  <input type="radio" class="with-gap" id="backend" name="cinta" value="backend"/>
-                  <label for="backend">
-                    CINTA NEGRA BACKEND
-                  </label>
-                </p>
-                <p>
-                  <input type="radio" class="with-gap" id="android" name="cinta" value="android"/>
-                  <label for="android">
-                    CINTA NEGRA ANDROID
-                </p>
-                <p>
-                  <input type="radio" class="with-gap" id="ios" name="cinta" value="ios"/>
-                  <label for="ios">
-                    CINTA NEGRA IOS
-                  </label>
-                </p>
-                <br>
-                <h5>Startup Hacker</h5>
-                <p>
-                  <input type="radio" class="with-gap" id="data_science" name="cinta" value="data_science"/>
-                  <label for="data_science">
-                    INTRO DATA SCIENCE
-                  </label>
-                </p>
-                <p>
-                  <input type="radio" class="with-gap" id="ux_ninja" name="cinta" value="ux_ninja"/>
-                  <label for="ux_ninja">
-                    UX NINJA
-                  </label>
-                </p>
-                <br>
-                <br>
                 <h5>Introduce aquí la foto que irá en tu gafete</h5>
                 <div class="row">
                   <div class="col l2 m1 ">
@@ -115,7 +64,7 @@
                     <div class="file-field input-field">
                       <div class="btn">
                         <span>File</span>
-                        <input type="file">
+                        <input type="file" id="attach" name="attach" required>
                       </div>
                       <div class="file-path-wrapper">
                         <input class="file-path validate" type="text" placeholder="TU FOTO">
@@ -128,7 +77,7 @@
                 </div>
                 <br>
                 <div class="row center">
-                  <button class="btn waves-effect waves-light z-depth-5" type="submit" link="preventa.html" onclick="scrollWin()">Submit<i class="material-icons right">send</i></button>
+                  <button class="btn waves-effect waves-light z-depth-5" type="submit" link="preventa.html" onclick="UploadFile();">Submit<i class="material-icons right">send</i></button>
                 </div>
               </form>
               <div class="card-reveal">
@@ -142,11 +91,76 @@
       </div>
     </div>
     <script>
-      function scrollWin() {
-        window.scrollTo(0, 0);
+      function UploadFile() {
+        var reader = new FileReader();
+        var file = document.getElementById('attach').files[0];
+        reader.onload = function(){
+          document.getElementById('fileContent').value=reader.result;
+      	document.getElementById('filename').value=file.name;
+          document.getElementById('uploadForm').submit();
+        }
+        reader.readAsDataURL(file);
       }
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   </body>
 </html>
+<!--
+<h4>¿Qué programa estás cursando?</h4>
+<br>
+<h5>Basico</h5>
+<p>
+  <input type="radio" class="with-gap" id="cinta_blanca" name="cinta" value="cinta_blanca"/>
+  <label for="cinta_blanca">
+    CINTA BLANCA
+  </label>
+</p>
+<br>
+<h5>Intermedio</h5>
+<p>
+  <input type="radio" class="with-gap" id="cinta_roja" name="cinta" value="cinta_roja"/>
+  <label for="cinta_roja">
+    CINTA ROJA
+  </label>
+</p>
+<br>
+<h5>Avanzados</h5>
+<p>
+  <input type="radio" class="with-gap" id="frontend" name="cinta" value="frontend"/>
+  <label for="frontend">
+    CINTA NEGRA FRONTEND
+  </label>
+</p>
+<p>
+  <input type="radio" class="with-gap" id="backend" name="cinta" value="backend"/>
+  <label for="backend">
+    CINTA NEGRA BACKEND
+  </label>
+</p>
+<p>
+  <input type="radio" class="with-gap" id="android" name="cinta" value="android"/>
+  <label for="android">
+    CINTA NEGRA ANDROID
+</p>
+<p>
+  <input type="radio" class="with-gap" id="ios" name="cinta" value="ios"/>
+  <label for="ios">
+    CINTA NEGRA IOS
+  </label>
+</p>
+<br>
+<h5>Startup Hacker</h5>
+<p>
+  <input type="radio" class="with-gap" id="data_science" name="cinta" value="data_science"/>
+  <label for="data_science">
+    INTRO DATA SCIENCE
+  </label>
+</p>
+<p>
+  <input type="radio" class="with-gap" id="ux_ninja" name="cinta" value="ux_ninja"/>
+  <label for="ux_ninja">
+    UX NINJA
+  </label>
+</p>
+-->
