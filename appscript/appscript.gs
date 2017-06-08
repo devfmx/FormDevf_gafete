@@ -1,5 +1,5 @@
 // Do change it your email address.
-var emailTo= "iancarloz27g@gmail.com"
+var emailTo= "" // Optional if you want to recive notifications when form is submited by anyone
 
 function doPost(e) {
 
