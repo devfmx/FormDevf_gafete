@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gafete - Dev.f</title>
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Dev.f - ¡Bienvenido al Batch 15!</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,15 +17,24 @@
           <div class="card cyan darken-4 z-depth-5">
             <div class="card-content white-text">
               <span class="card-title activator white-text">
-                <h2>Dev.f gafete</h2>
-                <h3>Llenando este form genaremos tu gafete</h3>
+                <h2>Dev.f Batch 15</h2>
+                <h3>¡Bienvenido al Dev.f!</h3>
               </span>
-              <p class="flow-text">
-                Nos es importante poder identificarte, por favor llena este form y así generaremos un gafete personalizado para que puedas estar en Dev.f
+              <p class="section">
+                ¡Estamos muy emocionados de compartir el siguiente batch contigo!
+                Para poder identificarte y tener una experiencia eficiente y
+                seguro, favor de llenar este form.
+              </p>
+              <p class="section">
+                A continuación, después de subir tu foto te llevaremos a un
+                diagnóstico para conocerte mejor y estar listos desde el día 0
+                para darte la mejor experiencia posible. Por favor llena las
+                dos partes completamente. Cualquier duda escríbenos por
+                <a href="mailto:hola@devf.mx">hola@devf.mx</a>.
               </p>
             </div>
             <div class="card-content white">
-              <form id="uploadForm" action="YOUR_LINK" method="POST">
+              <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbxyZWT0D8LHCXpScK7jyIXfj-sgAJ7rjT73sAkAD5LdAitsUMU/exec" method="POST">
                 <input type="hidden" value="" name="fileContent" id="fileContent">
                 <input type="hidden" value="" name="filename" id="filename">
 
@@ -42,7 +51,7 @@
                 <br>
                 <div class="input-field">
                   <input id="email" type="text" class="validate" name="email" required>
-                  <label for="email">email</label>
+                  <label for="email">Email</label>
                 </div>
                 <br>
                 <div class="row">
@@ -57,18 +66,19 @@
                 </div>
                 <br>
                 <h5>Introduce aquí la foto que irá en tu gafete</h5>
+                <p>Favor de escoger una foto reciente de tu cara, preferiblemente
+                sin gorra ni lentes.</p>
                 <div class="row">
                   <div class="col l2 m1 ">
                   </div>
                   <div class="col l8 m10 s12">
                     <div class="file-field input-field">
                       <div class="btn">
-                        <span>File</span>
+                        <span>Escoger Archivo</span>
                         <input type="file" id="attach" name="attach" required>
                       </div>
                       <div class="file-path-wrapper">
                         <input class="file-path validate" type="text" placeholder="TU FOTO">
-                        <!-- <input class="file-path validate" type="text" placeholder="Foto en donde salgas mas guapo 7u7"> -->
                       </div>
                     </div>
                   </div>
@@ -77,13 +87,11 @@
                 </div>
                 <br>
                 <div class="row center">
-                  <button class="btn waves-effect waves-light z-depth-5" type="submit" link="preventa.html" onclick="UploadFile();">Submit<i class="material-icons right">send</i></button>
+                  <button class="btn waves-effect waves-light z-depth-5" type="submit" link="preventa.html" onclick="UploadFile();">
+                    SIGUIENTE<i class="material-icons right">send</i>
+                  </button>
                 </div>
               </form>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                <p>Here is some more information about this product that is only revealed once clicked on.</p>
-              </div>
             </div>
           </div>
         </div>
@@ -106,61 +114,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   </body>
 </html>
-<!--
-<h4>¿Qué programa estás cursando?</h4>
-<br>
-<h5>Basico</h5>
-<p>
-  <input type="radio" class="with-gap" id="cinta_blanca" name="cinta" value="cinta_blanca"/>
-  <label for="cinta_blanca">
-    CINTA BLANCA
-  </label>
-</p>
-<br>
-<h5>Intermedio</h5>
-<p>
-  <input type="radio" class="with-gap" id="cinta_roja" name="cinta" value="cinta_roja"/>
-  <label for="cinta_roja">
-    CINTA ROJA
-  </label>
-</p>
-<br>
-<h5>Avanzados</h5>
-<p>
-  <input type="radio" class="with-gap" id="frontend" name="cinta" value="frontend"/>
-  <label for="frontend">
-    CINTA NEGRA FRONTEND
-  </label>
-</p>
-<p>
-  <input type="radio" class="with-gap" id="backend" name="cinta" value="backend"/>
-  <label for="backend">
-    CINTA NEGRA BACKEND
-  </label>
-</p>
-<p>
-  <input type="radio" class="with-gap" id="android" name="cinta" value="android"/>
-  <label for="android">
-    CINTA NEGRA ANDROID
-</p>
-<p>
-  <input type="radio" class="with-gap" id="ios" name="cinta" value="ios"/>
-  <label for="ios">
-    CINTA NEGRA IOS
-  </label>
-</p>
-<br>
-<h5>Startup Hacker</h5>
-<p>
-  <input type="radio" class="with-gap" id="data_science" name="cinta" value="data_science"/>
-  <label for="data_science">
-    INTRO DATA SCIENCE
-  </label>
-</p>
-<p>
-  <input type="radio" class="with-gap" id="ux_ninja" name="cinta" value="ux_ninja"/>
-  <label for="ux_ninja">
-    UX NINJA
-  </label>
-</p>
--->

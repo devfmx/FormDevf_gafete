@@ -9,11 +9,14 @@ function doPost(e) {
     var email = e.parameter.email;
     var name = e.parameter.name;
     var result=uploadFileToGoogleDrive(data,filename,name,email,e);
-    return ContentService    // return json success results
-          .createTextOutput(
-            JSON.stringify({"result":"success",
-                            "data": JSON.stringify(result) }))
-          .setMimeType(ContentService.MimeType.JSON);
+    var t = HtmlService.createTemplateFromFile('success');
+    // Link and URL parameters generated using "Get Prefilled Link" option in the Google form.
+    t.formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSer00gd4UP8Q4RfSYNqp-ObZ2Ob-AgE-xpNZ-8HCbcePW_k_A/viewform?usp=pp_url"
+    t.formUrl += "&entry.428433454=" + e.parameter.name;
+    t.formUrl += "&entry.43426329=" + e.parameter.last_name;
+    t.formUrl += "&entry.1302531912=" + e.parameter.email;
+    return t.evaluate();
+
   } catch(error) { // if error return this
     Logger.log(error);
     return ContentService
@@ -102,7 +105,7 @@ function uploadFileToGoogleDrive(data, file, name, email,e) {
 
     record_data(e,fileUrl);
 
-    MailApp.sendEmail(emailTo, "New Job Application Recieved","New Job Application Request Recieved",{htmlBody:html});
+    MailApp.sendEmail(emailTo, "Nuevo registro de alumno - Batch 15","Nuevo registro de alumno - Batch 15 Request Recieved",{htmlBody:html});
         return file.getUrl();
   } catch (f) {
     return ContentService    // return json success results
