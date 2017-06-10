@@ -12,9 +12,9 @@ function doPost(e) {
     var t = HtmlService.createTemplateFromFile('success');
     // Link and URL parameters generated using "Get Prefilled Link" option in the Google form.
     t.formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSer00gd4UP8Q4RfSYNqp-ObZ2Ob-AgE-xpNZ-8HCbcePW_k_A/viewform?usp=pp_url"
-    t.formUrl += "&entry.428433454=" + e.parameter.name;
-    t.formUrl += "&entry.43426329=" + e.parameter.last_name;
-    t.formUrl += "&entry.1302531912=" + e.parameter.email;
+    t.formUrl += "&entry.428433454=" + encodeURIComponent(e.parameter.name);
+    t.formUrl += "&entry.43426329=" + encodeURIComponent(e.parameter.last_name);
+    t.formUrl += "&entry.1302531912=" + encodeURIComponent(e.parameter.email);
     return t.evaluate();
 
   } catch(error) { // if error return this
@@ -25,18 +25,6 @@ function doPost(e) {
   }
 }
 
-// new property service GLOBAL
-var SCRIPT_PROP = PropertiesService.getScriptProperties();
-// see: https://developers.google.com/apps-script/reference/properties/
-
-/**
- * select the sheet
- */
-function setup() {
-    var doc = SpreadsheetApp.getActiveSpreadsheet();
-    SCRIPT_PROP.setProperty("key", doc.getId());
-}
-
 /**
  * record_data inserts the data received from the html form submission
  * e is the data received from the POST
@@ -44,7 +32,7 @@ function setup() {
 
 function record_data(e,fileUrl) {
   try {
-    var doc     = SpreadsheetApp.openById(SCRIPT_PROP.getProperty("key"));
+    var doc     = SpreadsheetApp.getActiveSpreadsheet();
     var sheet   = doc.getSheetByName('responses'); // select the responses sheet
 
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
