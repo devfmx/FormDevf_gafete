@@ -9,29 +9,20 @@ function doPost(e) {
     var email = e.parameter.email;
     var name = e.parameter.name;
     var result=uploadFileToGoogleDrive(data,filename,name,email,e);
-    return ContentService    // return json success results
-          .createTextOutput(
-            JSON.stringify({"result":"success",
-                            "data": JSON.stringify(result) }))
-          .setMimeType(ContentService.MimeType.JSON);
+    var t = HtmlService.createTemplateFromFile('success');
+    // Link and URL parameters generated using "Get Prefilled Link" option in the Google form.
+    t.formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSer00gd4UP8Q4RfSYNqp-ObZ2Ob-AgE-xpNZ-8HCbcePW_k_A/viewform?usp=pp_url"
+    t.formUrl += "&entry.428433454=" + encodeURIComponent(e.parameter.name);
+    t.formUrl += "&entry.43426329=" + encodeURIComponent(e.parameter.last_name);
+    t.formUrl += "&entry.1302531912=" + encodeURIComponent(e.parameter.email);
+    return t.evaluate();
+
   } catch(error) { // if error return this
     Logger.log(error);
     return ContentService
           .createTextOutput(JSON.stringify({"result":"error", "error": error}))
           .setMimeType(ContentService.MimeType.JSON);
   }
-}
-
-// new property service GLOBAL
-var SCRIPT_PROP = PropertiesService.getScriptProperties();
-// see: https://developers.google.com/apps-script/reference/properties/
-
-/**
- * select the sheet
- */
-function setup() {
-    var doc = SpreadsheetApp.getActiveSpreadsheet();
-    SCRIPT_PROP.setProperty("key", doc.getId());
 }
 
 /**
@@ -41,7 +32,7 @@ function setup() {
 
 function record_data(e,fileUrl) {
   try {
-    var doc     = SpreadsheetApp.openById(SCRIPT_PROP.getProperty("key"));
+    var doc     = SpreadsheetApp.getActiveSpreadsheet();
     var sheet   = doc.getSheetByName('responses'); // select the responses sheet
 
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
@@ -102,7 +93,7 @@ function uploadFileToGoogleDrive(data, file, name, email,e) {
 
     record_data(e,fileUrl);
 
-    MailApp.sendEmail(emailTo, "New Job Application Recieved","New Job Application Request Recieved",{htmlBody:html});
+    MailApp.sendEmail(emailTo, "Nuevo registro de alumno - Batch 15","Nuevo registro de alumno - Batch 15 Request Recieved",{htmlBody:html});
         return file.getUrl();
   } catch (f) {
     return ContentService    // return json success results
