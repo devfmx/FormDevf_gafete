@@ -1,0 +1,109 @@
+[{
+        "id": "1",
+        "name": "Ian",
+        "last_name": "Velazquez",
+        "email": "iancarloz27g@gmail.com",
+        "marca": "Asus",
+        "serie": "1234567",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "2",
+        "name": "Gerardo",
+        "last_name": "Medina",
+        "email": "gerardo.mdn95@gmail.com",
+        "marca": "Toshiba",
+        "serie": "12345666",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "3",
+        "name": "Juan",
+        "last_name": "López",
+        "email": "llo@gmail.com",
+        "marca": "Samsung",
+        "serie": "456789",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "4",
+        "name": "Chicharito",
+        "last_name": "Hernandez",
+        "email": "chicharo@her.com",
+        "marca": "apple",
+        "serie": "987654321",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "5",
+        "name": "Tiago",
+        "last_name": "Volpi",
+        "email": "tiago@qro.mx",
+        "marca": "Asus",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "6",
+        "name": "Abel",
+        "last_name": "Bueno",
+        "email": "ab@gmail.com",
+        "marca": "Asus",
+        "serie": "456789",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "7",
+        "name": "José",
+        "last_name": "José",
+        "email": "lanavedelolvido@gmail.com",
+        "marca": "Apple",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "8",
+        "name": "David",
+        "last_name": "Pacheco",
+        "email": "123@gmail.com",
+        "marca": "Toshiba",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "9",
+        "name": "Juan",
+        "last_name": "Vega",
+        "email": "vegaj@hotmail.com",
+        "marca": "Apple",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "10",
+        "name": "Martin",
+        "last_name": "Garcia",
+        "email": "martin@gmail.com",
+        "marca": "Asus",
+        "serie": "123M",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "11",
+        "name": "Andrea",
+        "last_name": "Flores",
+        "email": "flowers@gmail.com",
+        "marca": "HP",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    },
+    {
+        "id": "12",
+        "name": "Luis",
+        "last_name": "Asterisco",
+        "email": "ast@gmail.com",
+        "marca": "Lenovo",
+        "serie": "123456",
+        "img": "https://lh4.googleusercontent.com/jQ1U8t1LhbGqTSza8BFJ3bXotbqLeOl7ni3uxMN3PEpFDQdUM1mfwMZIDgCOXDwDhtEDMGU8FLzhySs=w1920-h948-rw"
+    }
+]
