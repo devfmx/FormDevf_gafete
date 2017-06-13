@@ -87,7 +87,7 @@
                 </div>
                 <br>
                 <div class="row center">
-                  <button class="btn waves-effect waves-light z-depth-5" type="submit" link="preventa.html" onclick="UploadFile();">
+                  <button class="btn waves-effect waves-light z-depth-5" link="preventa.html" onclick="UploadFile();">
                     SIGUIENTE<i class="material-icons right">send</i>
                   </button>
                 </div>
@@ -108,6 +108,8 @@
           document.getElementById('uploadForm').submit();
         }
         reader.readAsDataURL(file);
+        // Submit form
+        //return true;
       }
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
