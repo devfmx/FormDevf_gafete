@@ -1,21 +1,35 @@
 .gaf {
+    background-image: url(img/gafete1.png);
+    background-size: 330px 450px;
     display: inline-block;
-    width: 450px;
-    height: 330px;
+    width: 330px;
+    height: 450px;
     margin: 10px;
-    border: 3px solid black;
 }
 
-.nom {
+.nombre {
+    font-family: url(fonts/MOSK.TTF);
+    color: #00FF00;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.apellido {
+    font-family: url(fonts/MOSK.TTF);
+    color: #00FF00;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.marca {
+    margin-left: 15px;
+}
+
+.serie {
     margin-left: 15px;
 }
 
 .foto {
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-.logo {
-    margin-left: 15px;
-    margin-top: 15px;
+    margin-left: 47px;
+    margin-top: 85px;
 }
