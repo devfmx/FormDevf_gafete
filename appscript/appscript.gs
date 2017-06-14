@@ -62,7 +62,7 @@ function record_data(e,fileUrl) {
 
 function uploadFileToGoogleDrive(data, file, name, email,e) {
   try {
-    var dropbox = "Fotos";
+    var dropbox = "Fotos B15";
     var folder, folders = DriveApp.getFoldersByName(dropbox);
 
     if (folders.hasNext()) {
@@ -76,7 +76,9 @@ function uploadFileToGoogleDrive(data, file, name, email,e) {
         blob = Utilities.newBlob(bytes, contentType, file);
         var file = folder.createFolder([name, email].join("-")).createFile(blob);
 
-        var fileUrl=file.getUrl();
+        // URL to read the image directly given the file's ID
+        // from https://stackoverflow.com/questions/10311092/displaying-files-e-g-images-stored-in-google-drive-on-a-website
+        var fileUrl = "https://drive.google.com/uc?export=view&id=" + file.getId();
 
 		//Generating Email Body
 		var html =
