@@ -2,10 +2,9 @@
     <div class="gaf" ng-repeat="student in $ctrl.data">
         <img class="foto" src="{{student.photo}}" alt="" height="100">
         <br>
-        <div class="name">
-          <h5 class="nombre">{{student.name}}</h5>
-          <h5 class="apellido">{{student.last_name}}</h5>
-        </div>
-        <p>{{student.serie}}</p>
+        <h5 class="nombre">{{student.name}}</h5>
+        <h5 class="apellido">{{student.last_name}}</h5>
+        <p class="marca">{{student.marca}}</p>
+        <p class="serie">{{student.serie}}</p>
     </div>
 </div>
