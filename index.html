@@ -96,7 +96,7 @@
         var file = document.getElementById('attach').files[0];
         reader.onload = function(){
           document.getElementById('fileContent').value=reader.result;
-      	document.getElementById('filename').value=file.name;
+          document.getElementById('filename').value=file.name;
           document.getElementById('uploadForm').submit();
         }
         reader.readAsDataURL(file);
