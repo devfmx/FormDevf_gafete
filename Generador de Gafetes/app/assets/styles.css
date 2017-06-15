@@ -7,17 +7,28 @@
     margin: 10px;
 }
 
+@font-face {
+  font-family: 'MOSK';
+  src: url(fonts/MOSK_ULTRA-BOLD_900.TTF);
+}
+.name{
+  max-width: 30px;
+}
 .nombre {
-    font-family: url(fonts/MOSK.TTF);
+    margin-top: -120px;
+    font-size: 42px;
+    font-family: 'MOSK';
     color: #00FF00;
-    margin-left: 30px;
+    margin-left: 150px;
     text-transform: uppercase;
 }
 
 .apellido {
-    font-family: url(fonts/MOSK.TTF);
+    margin-top: -10px;
+    font-size: 34px;
+    font-family: 'MOSK';
     color: #00FF00;
-    margin-left: 15px;
+    margin-left: 150px;
     text-transform: uppercase;
 }
 
