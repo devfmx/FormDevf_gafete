@@ -8,3 +8,9 @@
 ## 4. Selecionar la opcion Publish > Delploy as web app... > Deploy
 ### Copia el link y pegalo en la etiqueta action del form que se encuentra en el documento index.html
 ##Prueba...
+
+
+# Generador de Gafetes
+## 1. Se debe colocar un archivo .json correspondiente a los datos en "app/assets"
+### El .json debe tener el mismo formato que contiene el actual.
+## 2. Correr el proyecto Generador de gafetes con un servidor como 200 OK!
