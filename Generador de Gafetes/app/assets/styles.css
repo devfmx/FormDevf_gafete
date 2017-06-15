@@ -1,53 +1,68 @@
 .gaf {
-    display: inline-block;
-    width: 330px;
-    height: 450px;
-    margin: 10px;
+  display: inline-block;
+  width: 330px;
+  height: 450px;
+  margin: 10px;
 }
 
 @font-face {
-    font-family: 'MOSK';
-    src: url(fonts/MOSK_ULTRA-BOLD_900.TTF);
+  font-family: 'MOSK';
+  src: url(fonts/MOSK_ULTRA-BOLD_900.TTF);
 }
 
 @font-face {
-    font-family: 'HELVETICA';
-    src: url(fonts/HELVETICALTSTD-COND.OTF);
+  font-family: 'HELVETICA';
+  src: url(fonts/HELVETICALTSTD-COND.OTF);
 }
 
-.nombre {
-    margin-top: -580px;
-    font-size: 42px;
-    font-family: 'MOSK';
-    color: #00FF00;
-    margin-left: 150px;
-    text-transform: uppercase;
-}
-
-.apellido {
-    margin-top: -10px;
-    font-size: 34px;
-    font-family: 'MOSK';
-    color: #00FF00;
-    margin-left: 150px;
-    text-transform: uppercase;
-}
-
-.marca {
-    font-family: 'HELVETICA';
-    margin-left: 95px;
-    margin-top: 143px;
-    text-align: center;
-}
-
-.serie {
-    font-family: 'HELVETICA';
-    margin-left: 95px;
-    margin-top: 26px;
-    text-align: center;
+.disenio{
+  position: absolute;
+  z-index: -1;
 }
 
 .foto {
-    margin-left: -580px;
-    margin-top: 85px;
+  position: absolute;
+  z-index: 0;
+  margin-left: 32px;
+  margin-top: 74px;
+}
+
+.nombre {
+  position: absolute;
+  z-index: 1;
+  margin-left: 150px;
+  margin-top: 44px;
+  font-size: 42px;
+  font-family: 'MOSK';
+  color: #00FF00;
+  text-transform: uppercase;
+}
+
+.apellido {
+  position: absolute;
+  z-index: 1;
+  margin-top: 84px;
+  font-size: 34px;
+  font-family: 'MOSK';
+  color: #00FF00;
+  margin-left: 150px;
+  text-transform: uppercase;
+}
+
+.marca {
+  position: absolute;
+  z-index: 1;
+  margin-left: 118px;
+  margin-top: 270px;
+  font-family: 'HELVETICA';
+  /*text-align: center;*/
+}
+
+.serie {
+  position: absolute;
+  z-index: 1;
+  margin-left: 118px;
+  margin-top: 318px;
+  font-family: 'HELVETICA';
+  text-align: center;
 }
