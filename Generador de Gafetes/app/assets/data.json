@@ -5,43 +5,20 @@
         "email": "valentina@rappi.com",
         "marca": "APPLE",
         "serie": " C1ms2u51h3qd",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQktZQ09MT2o4Y0E"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQktZQ09MT2o4Y0E",
+        "nfont": "n4",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-15T16:24:25.386Z",
         "name": "AUREA PAOLA",
-        "last_name": "RODRIGUEZ BARRON",
+        "last_name": "RODRIGUEZ",
         "email": "paola@aureapaola.com",
         "marca": "APPLE",
         "serie": "C02K60M6DRV7",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZdFRDTHBLaUtLcjA"
-    },
-    {
-        "timeline": "2017-06-15T17:05:18.414Z",
-        "name": "Alejandro",
-        "last_name": "Sandler",
-        "email": "alexsandler8@gmail.com",
-        "marca": "Apple",
-        "serie": "C02Q91REGCN3",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZa05oN05SNmxOSE0"
-    },
-    {
-        "timeline": "2017-06-15T17:16:37.131Z",
-        "name": "Luis Fernando",
-        "last_name": "Arteaga",
-        "email": "lf.arteaga@hotmail.com",
-        "marca": "Lenovo Yoga 910",
-        "serie": "PPD-QCNFA344AH",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZaDdEQ3NuSnB4MEU"
-    },
-    {
-        "timeline": "2017-06-15T17:53:58.188Z",
-        "name": "Ricardo ",
-        "last_name": "Ruiz Velazco",
-        "email": "gral.vacio@gmail.com",
-        "marca": "DELL",
-        "serie": 35546456558,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSnV0V2d6N0ppelk"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZdFRDTHBLaUtLcjA",
+        "nfont": "n5",
+        "lfont": "l3"
     },
     {
         "timeline": "2017-06-15T18:06:38.165Z",
@@ -50,16 +27,53 @@
         "email": "carmen@4uno.org",
         "marca": "Lenovo",
         "serie": "YB08157299",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZakVsdi1UdGdsTm8"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZakVsdi1UdGdsTm8",
+        "nfont": "n2",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-15T17:16:37.131Z",
+        "name": "Luis Fernando",
+        "last_name": "Arteaga",
+        "email": "lf.arteaga@hotmail.com",
+        "marca": "Lenovo",
+        "serie": "PPD-QCNFA344AH",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZaDdEQ3NuSnB4MEU",
+        "nfont": "n5",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-15T17:05:18.414Z",
+        "name": "Alejandro",
+        "last_name": "Sandler",
+        "email": "alexsandler8@gmail.com",
+        "marca": "Apple",
+        "serie": "C02Q91REGCN3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZa05oN05SNmxOSE0",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-15T17:53:58.188Z",
+        "name": "Ricardo ",
+        "last_name": "Ruiz",
+        "email": "gral.vacio@gmail.com",
+        "marca": "DELL",
+        "serie": 35546456558,
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSnV0V2d6N0ppelk",
+        "nfont": "n2",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-15T18:08:02.325Z",
         "name": "Emiliano",
-        "last_name": "Sotomayor González",
+        "last_name": "Sotomayor",
         "email": "uboat46@hotmail.com",
         "marca": "APPLE",
         "serie": "C02N4B0QG083",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZUnoyazNtazRFMGM"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZUnoyazNtazRFMGM",
+        "nfont": "n3",
+        "lfont": "l3"
     },
     {
         "timeline": "2017-06-15T19:58:22.820Z",
@@ -68,25 +82,20 @@
         "email": "alejandro.canales.morales@gmail.com",
         "marca": "Microsoft",
         "serie": 68430762554,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQWR0TEZvWmRHWmM"
-    },
-    {
-        "timeline": "2017-06-15T19:58:26.624Z",
-        "name": "Alejandro",
-        "last_name": "Canales",
-        "email": "alejandro.canales.morales@gmail.com",
-        "marca": "Microsoft",
-        "serie": 68430762554,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZR05nOS1SZk5Vamc"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQWR0TEZvWmRHWmM",
+        "nfont": "n4",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-15T20:09:57.795Z",
         "name": "Imelda Monserrath",
         "last_name": "Alonso",
         "email": "adlewic@gmail.com",
-        "marca": "MacBook Pro ",
+        "marca": "APPLE",
         "serie": "C1MK7AABDTY4",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZR2Y3SkRnd3UzWDQ"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZR2Y3SkRnd3UzWDQ",
+        "nfont": "n7",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-15T21:57:03.035Z",
@@ -95,7 +104,9 @@
         "email": "eddyezban@gmail.com",
         "marca": "APPLE",
         "serie": "C02R207ZGCN4",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZWUdaYnBCR2R6ajQ"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZWUdaYnBCR2R6ajQ",
+        "nfont": "n3",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-15T22:02:47.542Z",
@@ -104,7 +115,9 @@
         "email": "andrade.estrada.alma@hotmail.com",
         "marca": "Lenovo",
         "serie": 3241152803005,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZYkN4eHhTN0J4MXc"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZYkN4eHhTN0J4MXc",
+        "nfont": "n1",
+        "lfont": "l2"
     },
     {
         "timeline": "2017-06-15T22:30:21.034Z",
@@ -113,16 +126,20 @@
         "email": "termetta@gmail.com",
         "marca": "APPLE",
         "serie": "C02RN059GTHV",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZLWZ3MWx3VHI1eG8"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZLWZ3MWx3VHI1eG8",
+        "nfont": "n1",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-16T02:11:29.179Z",
         "name": "José Antonio",
-        "last_name": "Aznar Rojí",
+        "last_name": "Aznar",
         "email": "jose.aznar94@gmail.com",
         "marca": "HP",
         "serie": "5CD33218GZ",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZMFNkOXI3TXExcHc"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZMFNkOXI3TXExcHc",
+        "nfont": "n5",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-16T02:33:05.373Z",
@@ -131,15 +148,41 @@
         "email": "aestradap.09@gmail.com",
         "marca": "APPLE",
         "serie": "C1MS1EKSH3QF",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZb2kya3JoX0ZtUGM"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZb2kya3JoX0ZtUGM",
+        "nfont": "n1",
+        "lfont": "l1"
     },
     {
         "timeline": "2017-06-16T03:01:46.724Z",
         "name": "Miguel Angel",
-        "last_name": "Contreras Izquierdo",
+        "last_name": "Contreras",
         "email": "phdmikes400@gmail.com",
         "marca": "HP",
         "serie": "0977100000405F00000610180",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZTmRHUnhkb0t4b28"
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZTmRHUnhkb0t4b28",
+        "nfont": "n5",
+        "lfont": "l3"
+    },
+    {
+        "timeline": "2017-06-16T16:42:16.469Z",
+        "name": "SAUL ADRIAN",
+        "last_name": "CORTES",
+        "email": "saul.cortes@maguendavid.com",
+        "marca": "DELL",
+        "serie": "",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZbEZvNEFKUFZlWVU",
+        "nfont": "n5",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T16:56:23.564Z",
+        "name": "Daniel",
+        "last_name": "Miranda",
+        "email": "vdanielmiranda@gmail.com",
+        "marca": "APPLE",
+        "serie": "C1MN93F7DTY3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQVZtam52dmdaZXM",
+        "nfont": "n1",
+        "lfont": "l1"
     }
 ]
