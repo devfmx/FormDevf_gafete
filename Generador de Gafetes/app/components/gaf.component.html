@@ -3,7 +3,17 @@
         <img src="/app/assets/img/gafete1.png" alt="" width="330" height="450" class="disenio">
         <img class="foto" src="{{student.photo}}" alt="" height="100">
         <br>
-        <h5 class="nombre">{{student.name}}</h5>
+        <h5 class="nombre">{{student.name}}
+            <script>
+                $(document).ready(function() {
+                    $(".nombre").each(function() {
+                        var charLength = $(this).text().length;
+                        console.log(charLength);
+                        if (charLength > 5) $(this).css("font-size", "25px");
+                    });
+                });
+            </script>
+        </h5>
         <h5 class="apellido">{{student.last_name}}</h5>
         <p class="marca">{{student.marca}}</p>
         <p class="serie">{{student.serie}}</p>
