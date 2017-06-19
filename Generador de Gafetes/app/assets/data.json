@@ -43,50 +43,6 @@
         "lfont": "l1"
     },
     {
-        "timeline": "2017-06-15T17:05:18.414Z",
-        "name": "Alejandro",
-        "last_name": "Sandler",
-        "email": "alexsandler8@gmail.com",
-        "marca": "Apple",
-        "serie": "C02Q91REGCN3",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZa05oN05SNmxOSE0",
-        "nfont": "n4",
-        "lfont": "l1"
-    },
-    {
-        "timeline": "2017-06-15T17:53:58.188Z",
-        "name": "Ricardo ",
-        "last_name": "Ruiz",
-        "email": "gral.vacio@gmail.com",
-        "marca": "DELL",
-        "serie": 35546456558,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSnV0V2d6N0ppelk",
-        "nfont": "n2",
-        "lfont": "l1"
-    },
-    {
-        "timeline": "2017-06-15T18:08:02.325Z",
-        "name": "Emiliano",
-        "last_name": "Sotomayor",
-        "email": "uboat46@hotmail.com",
-        "marca": "APPLE",
-        "serie": "C02N4B0QG083",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZUnoyazNtazRFMGM",
-        "nfont": "n3",
-        "lfont": "l3"
-    },
-    {
-        "timeline": "2017-06-15T19:58:22.820Z",
-        "name": "Alejandro",
-        "last_name": "Canales",
-        "email": "alejandro.canales.morales@gmail.com",
-        "marca": "Microsoft",
-        "serie": 68430762554,
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQWR0TEZvWmRHWmM",
-        "nfont": "n4",
-        "lfont": "l1"
-    },
-    {
         "timeline": "2017-06-15T20:09:57.795Z",
         "name": "Imelda Monserrath",
         "last_name": "Alonso",
@@ -95,17 +51,6 @@
         "serie": "C1MK7AABDTY4",
         "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZR2Y3SkRnd3UzWDQ",
         "nfont": "n7",
-        "lfont": "l1"
-    },
-    {
-        "timeline": "2017-06-15T21:57:03.035Z",
-        "name": "Eduardo",
-        "last_name": "Ezban",
-        "email": "eddyezban@gmail.com",
-        "marca": "APPLE",
-        "serie": "C02R207ZGCN4",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZWUdaYnBCR2R6ajQ",
-        "nfont": "n3",
         "lfont": "l1"
     },
     {
@@ -142,17 +87,6 @@
         "lfont": "l1"
     },
     {
-        "timeline": "2017-06-16T02:33:05.373Z",
-        "name": "Aarón",
-        "last_name": "Estrada",
-        "email": "aestradap.09@gmail.com",
-        "marca": "APPLE",
-        "serie": "C1MS1EKSH3QF",
-        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZb2kya3JoX0ZtUGM",
-        "nfont": "n1",
-        "lfont": "l1"
-    },
-    {
         "timeline": "2017-06-16T03:01:46.724Z",
         "name": "Miguel Angel",
         "last_name": "Contreras",
@@ -182,6 +116,239 @@
         "marca": "APPLE",
         "serie": "C1MN93F7DTY3",
         "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQVZtam52dmdaZXM",
+        "nfont": "n1",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T18:55:48.767Z",
+        "name": "Edgar Alan",
+        "last_name": "Pozos",
+        "email": "apozos_9@yahoo.com",
+        "marca": "Apple",
+        "serie": "C1MQL15ADTY3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZdFdsYlF2WmhJUVU",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T21:27:01.556Z",
+        "name": "Daniela",
+        "last_name": "Haddad",
+        "email": "dan@mousai.io",
+        "marca": "APPLE",
+        "serie": "C02PR2XFGF84",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQUJpanVrd1ZEQ1U",
+        "nfont": "n3",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T23:33:58.091Z",
+        "name": "Juan Pablo",
+        "last_name": "Ortega",
+        "email": "juan@rappi.com",
+        "marca": "Apple",
+        "serie": "C02TL0VCHF1R",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZMkpnN19IVXFDZEU",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T23:34:18.633Z",
+        "name": "Sergio ",
+        "last_name": "Carballo",
+        "email": "scarballo@srpago.com",
+        "marca": "Apple",
+        "serie": "C02RN4MHGTHT",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQzFDTS02b1ZGZXM",
+        "nfont": "n1",
+        "lfont": "l2"
+    },
+    {
+        "timeline": "2017-06-17T00:19:10.044Z",
+        "name": "Edwin",
+        "last_name": "Hernández",
+        "email": "edgon85@gmail.com",
+        "marca": "Dell",
+        "serie": "GZ173Z1",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZS2FHNmswLXZsdkk",
+        "nfont": "n1",
+        "lfont": "l3"
+    },
+    {
+        "timeline": "2017-06-17T01:31:51.424Z",
+        "name": "Karen",
+        "last_name": "Arteaga",
+        "email": "karensota1913@gmail.com",
+        "marca": "Apple",
+        "serie": "C1MPMCEJDTY3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZbDUzYmZKdDZIZzA",
+        "nfont": "n1",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-17T01:55:15.287Z",
+        "name": "Sandra Elizabeth",
+        "last_name": "Mezquitic",
+        "email": "sandymr@gmail.com",
+        "marca": "Toshiba",
+        "serie": " 8E184145C",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZZGV6QmxnRnBITWs",
+        "nfont": "n6",
+        "lfont": "l3"
+    },
+    {
+        "timeline": "2017-06-17T16:02:15.768Z",
+        "name": "Yonatan Abraham",
+        "last_name": "Rojas",
+        "email": "yonatanrojas09@gmail.com",
+        "marca": "Apple",
+        "serie": "C02H3M4YDV13",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZTUJlZkd4c0VrM0k",
+        "nfont": "n7",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-17T19:32:45.720Z",
+        "name": "Camilo",
+        "last_name": "Sosa",
+        "email": "camiilososa@gmail.com",
+        "marca": "Apple",
+        "serie": "45102CVBF5W",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSFdrQXM3NEktc28",
+        "nfont": "n1",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-18T22:06:54.030Z",
+        "name": "gustavo",
+        "last_name": "Arciniega",
+        "email": "gustavo.aa18@gmail.com",
+        "marca": "Hp",
+        "serie": "5CD424132N",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZR3hWN1hZSmpOd0E",
+        "nfont": "n3",
+        "lfont": "l3"
+    },
+    {
+        "timeline": "2017-06-15T17:53:58.188Z",
+        "name": "Ricardo ",
+        "last_name": "Ruiz",
+        "email": "gral.vacio@gmail.com",
+        "marca": "DELL",
+        "serie": 35546456558,
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSnV0V2d6N0ppelk",
+        "nfont": "n2",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-15T18:08:02.325Z",
+        "name": "Emiliano",
+        "last_name": "Sotomayor",
+        "email": "uboat46@hotmail.com",
+        "marca": "APPLE",
+        "serie": "C02N4B0QG083",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZUnoyazNtazRFMGM",
+        "nfont": "n3",
+        "lfont": "l3"
+    },
+    {
+        "timeline": "2017-06-15T19:58:22.820Z",
+        "name": "Alejandro",
+        "last_name": "Canales",
+        "email": "alejandro.canales.morales@gmail.com",
+        "marca": "Microsoft",
+        "serie": 68430762554,
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZQWR0TEZvWmRHWmM",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T22:02:55.637Z",
+        "name": "Magdaleno",
+        "last_name": "García",
+        "email": "Magdaleno0100@gmail.com",
+        "marca": "HP",
+        "serie": "5CD3320Y6X",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZSXdKOTgwa3NYRGc",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-18T05:05:09.542Z",
+        "name": "Ana Lourdes",
+        "last_name": "González",
+        "email": "anilu556@hotmail.com",
+        "marca": "Apple",
+        "serie": "C02TFRT1H3QD",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZWGRWRzFyMUZScm8",
+        "nfont": "n5",
+        "lfont": "l2"
+    },
+
+
+    {
+        "timeline": "2017-06-15T17:05:18.414Z",
+        "name": "Alejandro",
+        "last_name": "Sandler",
+        "email": "alexsandler8@gmail.com",
+        "marca": "Apple",
+        "serie": "C02Q91REGCN3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZa05oN05SNmxOSE0",
+        "nfont": "n4",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-15T21:57:03.035Z",
+        "name": "Eduardo",
+        "last_name": "Ezban",
+        "email": "eddyezban@gmail.com",
+        "marca": "APPLE",
+        "serie": "C02R207ZGCN4",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZWUdaYnBCR2R6ajQ",
+        "nfont": "n3",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-16T02:33:05.373Z",
+        "name": "Aarón",
+        "last_name": "Estrada",
+        "email": "aestradap.09@gmail.com",
+        "marca": "APPLE",
+        "serie": "C1MS1EKSH3QF",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZb2kya3JoX0ZtUGM",
+        "nfont": "n1",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-17T01:58:17.564Z",
+        "name": "MARCO ANTONIO",
+        "last_name": "CORONA",
+        "email": "macorona@banxico.org.mx",
+        "marca": "APPLE",
+        "serie": "D92GK4FZDV13",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZM2YybGY5dUdKNlE",
+        "nfont": "n6",
+        "lfont": "l1"
+    },
+    {
+        "timeline": "2017-06-18T18:41:45.805Z",
+        "name": "Javier",
+        "last_name": "Shiordia",
+        "email": "shiordia@gmail.com",
+        "marca": "HP",
+        "serie": "CND41020D3",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZVEU2U3pnVlVtelE",
+        "nfont": "n1",
+        "lfont": "l2"
+    },
+    {
+        "timeline": "2017-06-18T21:06:29.337Z",
+        "name": "juan",
+        "last_name": "Vences",
+        "email": "jc.vences@gmail.com",
+        "marca": "Apple",
+        "serie": "34025EYHMATM",
+        "photo": "https://drive.google.com/uc?export=view&id=0BxFsPNTCfllZcjlzTVhjNHc2OGc",
         "nfont": "n1",
         "lfont": "l1"
     }
