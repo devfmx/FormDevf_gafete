@@ -78,7 +78,7 @@
                         <input type="file" id="attach" name="attach" required>
                       </div>
                       <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="TU FOTO">
+                        <input class="file-path validate" type="text" placeholder="TU FOTO" required>
                       </div>
                     </div>
                   </div>
@@ -100,6 +100,7 @@
     </div>
     <script>
       function UploadFile() {
+
         var reader = new FileReader();
         var file = document.getElementById('attach').files[0];
         reader.onload = function(){
