@@ -16,7 +16,7 @@
         <div class="col s12 m10 l8 ">
           <div class="card cyan darken-4 z-depth-5">
             <div class="card-content white-text">
-              <span class="card-title activator white-text">
+              <span class="card-title white-text">
                 <h2>Dev.f Batch 15</h2>
                 <h3>¡Bienvenido al Dev.f!</h3>
               </span>
@@ -78,7 +78,7 @@
                         <input type="file" id="attach" name="attach" required>
                       </div>
                       <div class="file-path-wrapper">
-                        <input class="file-path validate" type="text" placeholder="TU FOTO">
+                        <input class="file-path validate" type="text" placeholder="TU FOTO" required>
                       </div>
                     </div>
                   </div>
@@ -100,6 +100,7 @@
     </div>
     <script>
       function UploadFile() {
+
         var reader = new FileReader();
         var file = document.getElementById('attach').files[0];
         reader.onload = function(){
