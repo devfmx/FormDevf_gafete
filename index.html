@@ -35,36 +35,36 @@
               </p>
             </div>
             <div class="card-content white">
-              <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbxyZWT0D8LHCXpScK7jyIXfj-sgAJ7rjT73sAkAD5LdAitsUMU/exec" method="POST">
+              <form id="uploadForm" action="https://script.google.com/macros/s/AKfycbxyZWT0D8LHCXpScK7jyIXfj-sgAJ7rjT73sAkAD5LdAitsUMU/exec" onsubmit="UploadFile();" method="POST">
                 <input type="hidden" value="" name="fileContent" id="fileContent">
                 <input type="hidden" value="" name="filename" id="filename">
                 <div class="input-field">
                   <!-- <input id="name" type="text" class="validate" name="name" style="border-bottom: 1px solid black !important; box-shadow: 0 1px 0 0 black !important"> -->
-                  <input id="name" type="text" required class="validate tooltipped" name="name" 
+                  <input id="name" type="text" required class="validate tooltipped" name="name"
                     data-position="top" data-delay="50" data-tooltip="Ingresa el nombre que más te gusta si es que tienes dos nombres.">
                   <label for="name">Nombre</label>
                 </div>
                 <br>
                 <div class="input-field">
-                  <input id="last_name" type="text" class="validate tooltipped" name="last_name" required 
+                  <input id="last_name" type="text" class="validate tooltipped" name="last_name" required
                     data-position="top" data-delay="50" data-tooltip="Ingresa tu primer apellido.">
                   <label for="last_name">Apellido</label>
                 </div>
                 <br>
                 <div class="input-field">
-                  <input id="email" type="email" class="validate tooltipped" name="email" required 
+                  <input id="email" type="email" class="validate tooltipped" name="email" required
                     data-position="top" data-delay="50" data-tooltip="Usa un correo que verifiques frecuentemente.">
                   <label for="email">Email</label>
                 </div>
                 <br>
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="marca" type="text" class="validate tooltipped" name="marca" required 
+                    <input id="marca" type="text" class="validate tooltipped" name="marca" required
                       data-position="top" data-delay="50" data-tooltip="Escribe la marca de tu lap.  p. ej: Apple">
                     <label for="marca">Marca de tu lap</label>
                   </div>
                   <div class="input-field col s6">
-                    <input id="serie" type="text" class="validate tooltipped" name="serie" required 
+                    <input id="serie" type="text" class="validate tooltipped" name="serie" required
                       data-position="top" data-delay="50" data-tooltip="El número de serie generalmente lo encontrarás en la parte inferior de tu lap">
                     <label for="serie">Numero de serie</label>
                   </div>
@@ -93,7 +93,7 @@
                 </div>
                 <br>
                 <div class="row center">
-                  <button class="btn waves-effect waves-light z-depth-5" link="preventa.html" onclick="UploadFile();">
+                  <button class="btn waves-effect waves-light z-depth-4" link="preventa.html">
                     SIGUIENTE<i class="material-icons right">send</i>
                   </button>
                 </div>
@@ -104,8 +104,15 @@
         <div class="col m1 l2"></div>
       </div>
     </div>
-    <script>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      nombre = document.getElementById("name").value
       function UploadFile() {
+        // console.log(nombre);
         var reader = new FileReader();
         var file = document.getElementById('attach').files[0];
         reader.onload = function(){
@@ -123,7 +130,5 @@
       $('.tooltipped').tooltip({delay: 50});
     });
     </script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   </body>
 </html>
