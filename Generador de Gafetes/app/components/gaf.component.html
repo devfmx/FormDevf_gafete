@@ -1,14 +1,13 @@
 <div class="row">
-    <div class="gaf" id="nom" ng-repeat="student in $ctrl.data">
+    <div class="gaf" id="nom" ng-repeat="student in $ctrl.data.responses">
         <img src="/app/assets/img/gafete1.png" alt="" width="330" height="450" class="disenio">
-        <img class="foto" src="{{student.responses.photo}}" alt="" height="100">
+        <img class="foto" src="{{student.photo}}" alt="" height="100">
         <br>
         <div class "noum">
-            <h5 class="{{student.nfont}}">{{student.name}}</h5>
-            <h5 class="{{student.lfont}}">{{student.last_name}}</h5>
+            <h5 class="n7">{{student.name}}</h5>
+            <h5 class="l3">{{student.last_name}}</h5>
         </div>
         <p class="marca">{{student.marca}}</p>
         <p class="serie">{{student.serie}}</p>
     </div>
-    <p>{{$ctrl.data}}</p>
 </div>

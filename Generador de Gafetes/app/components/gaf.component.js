@@ -17,23 +17,13 @@
 
         vm.$onInit = onInit;
 
-//vm.$onInit = onInit;
-        //vm.otherFun = function(){}
-
-//       function onInit(){
-//          vm.apiData = starApi.get({category: vm.category})
-//             .$promise
-//            .then(function(response){
-//               vm.characters = response.results
-//          });
-
         function onInit() {
             vm.data = null;
             vm.desalumnos = null;
 
             vm.data = dataJson.get()
             vm.desalumnos = vm.data.responses
-            console.log(vm.data)
+            console.log(vm.data.responses)
         }
     }
 })();
