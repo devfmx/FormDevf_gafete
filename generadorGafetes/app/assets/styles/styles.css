@@ -1,0 +1,82 @@
+    .gaf {
+        display: inline-block;
+        width: 330px;
+        height: 450px;
+        margin: 10px;
+    }
+    
+    @font-face {
+        font-family: 'HELVETICA-BOLD';
+        src: url(../fonts/HelveticaLTStd-Bold.otf);
+    }
+    
+    @font-face {
+        font-family: 'HELVETICA-LIGHT';
+        src: url(../fonts/HelveticaLTStd-Light.otf);
+    }
+    
+    .disenio {
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .foto {
+        position: absolute;
+        z-index: 0;
+        margin-left: 120px;
+        margin-top: 30px;
+    }
+    
+    .nombre {
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-left: 3px;
+        margin-top: 140px;
+        font-size: 29px;
+        font-family: 'HELVETICA-BOLD';
+        color: white;
+        text-transform: uppercase;
+    }
+    
+    .apellido {
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        margin-top: 175px;
+        font-size: 29px;
+        font-family: 'HELVETICA-BOLD';
+        color: white;
+        margin-left: 3px;
+        text-transform: uppercase;
+    }
+    
+    .marca {
+        position: absolute;
+        z-index: 1;
+        margin-left: 105px;
+        margin-top: 246px;
+        font-family: 'HELVETICA-LIGHT';
+        text-transform: uppercase;
+        /*text-align: center;*/
+    }
+    
+    .serie {
+        position: absolute;
+        z-index: 1;
+        margin-left: 103px;
+        margin-top: 290px;
+        font-family: 'HELVETICA-LIGHT';
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .box {
+        text-align: center;
+        width: 300px;
+        border: 10px solid green;
+        font-family: 'HELVETICA-BOLD';
+        color: white;
+        padding: 25px;
+        margin: 25px;
+    }

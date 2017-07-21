@@ -3,25 +3,33 @@
 
     var gafGen = {
         templateUrl: './app/components/gaf.component.html',
-        controller: gafCtrl,
+        controller: gafCtrl
     };
 
     angular
         .module('gafApp')
         .component('gafGen', gafGen);
 
-    gafCtrl.$inject = ["dataJson"]
+    gafCtrl.$inject = ["gafApi"];
 
-    function gafCtrl(dataJson) {
+    function gafCtrl(gafApi) {
         var vm = this;
 
         vm.$onInit = onInit;
 
         function onInit() {
-            vm.data = null;
+            vm.student = null;
+            vm.dex;
+            vm.search = dosearch;
 
-            vm.data = dataJson.query()
-            console.log(vm.data)
+            function dosearch() {
+                vm.apiData = gafApi.get({
+                    dex: vm.dex
+                }).$promise.then(function(response) {
+                    vm.student = response;
+                    console.log(vm.student)
+                })
+            }
         }
     }
 })();
