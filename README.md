@@ -17,6 +17,10 @@ Una vez completados los pasos anteriores, en el documento Google Spreadsheet sel
 
 4) Copiar y pegar el código que se encuentra en la carpeta registro.devf.mx
 5) Seleccionar la opción Publicar > Publicar como aplicación web.
+   a) Versión del proyecto: nuevo
+   b) Ejecutar la aplicación como: yo
+   c) Quién tiene acceso a la aplicación: Cualquier persona, incluso de forma anónima
+
 6) Después de publicar, se generará un link. Copiar el link y pégalo en la etiqueta action del form que se encuentra en el documento index.html de la carpeta registro.devf.mx
 
 ### Una vez completados todos estos pasos el form debe enviar las respuestas al archivo Google Spreadsheet
