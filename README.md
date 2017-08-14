@@ -1,6 +1,6 @@
 # Descripción de las carpetas
 
-### 1. Código HTML del form que capturará la información del desalumno, esta información será enviada en un archivo de Google Spreadsheet. (registro.devf.mx)
+### 1. Código HTML del form que capturará la información del desalumno, esta información será enviada en un archivo de Google Spreadsheet. (docs -- el nombre es así para la configuración de Github pages)
 ### 2. Código necesario en el archivo Google Spreadsheet para que este pueda recibir la información capturada en el form. (Appscript).(appscript)
 ### 3. Aplicación en AngularJS que obtendrá información del archivo Google Spreadsheet, este desplegará los gafetes generados en una página web. (generadorGafetes)
 
