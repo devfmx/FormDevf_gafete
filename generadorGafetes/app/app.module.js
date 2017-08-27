@@ -2,5 +2,5 @@
     'use strict'
 
     angular
-        .module('gafApp', ['ngResource', 'driveApp', 'pickerApp'])
+        .module('gafApp', ['ngResource', 'driveApp'])
 })();
