@@ -1,0 +1,21 @@
+{
+  "name": "generador-gafetes",
+  "homepage": "https://github.com/devfmx/FormDevf_gafete",
+  "authors": [
+    "Brian Salomaki <brian@salomaki.com>"
+  ],
+  "description": "Generador Gafetes Dev.f",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngDrive": "^0.1.12"
+  }
+}

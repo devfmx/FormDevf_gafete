@@ -30,6 +30,8 @@
                     console.log(vm.student)
                 })
             }
-        }
+        }      
     }
+
+
 })();
