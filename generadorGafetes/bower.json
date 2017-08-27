@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "ngDrive": "^0.1.12"
+    "ngDrive": "^0.1.12",
+    "angular-google-picker": "^0.2.2"
   }
 }
