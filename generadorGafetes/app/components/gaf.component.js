@@ -23,14 +23,40 @@
             vm.search = dosearch;
 
             function dosearch() {
+                var listaAlumnos = [];
+                var listaFotos = [];
+
+                //
                 vm.apiData = gafApi.get({
                     dex: vm.dex
                 }).$promise.then(function(response) {
-                    vm.student = response;
-                    console.log(vm.student)
+                    listaAlumnos = response;
+                    if (listaFotos) {
+                      dibujarGafetes();
+                    }
+                })
+
+                // Descargar la lista de archivos dentro de carpeta de fotos
+                DriveService.get(...).$promise.then(function(response) {
+                  for (file in response) {
+                    var numero = file.name; // DSC_123.jpg
+                    // usar regex para sacar solo "123"
+                    listaFotos[numero] = file.url;
+                  }
+                  if (listaAlumnos) {
+                    dibujarGafetes();
+                  }
                 })
             }
-        }      
+
+            function dibujarGafetes() {
+              // juntar listaAlumnos y listaFotos
+              for (alumno in listaAlumnos) {
+                alumno.foto = listaFotos[alumno.foto];
+              }
+              vm.student = listaAlumnos;
+            }
+        }
     }
 
 
