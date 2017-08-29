@@ -1,7 +1,8 @@
-<h4 class="center">Ingresa el ID del archivo Google Spreadsheets</h4>
-
 <form class="container" ng-submit="$ctrl.search()">
+    <p class= "center">Ingresa el ID del archivo Google Spreadsheets</p>
     <input class="col s12 m8" type="text" ng-model="$ctrl.dex">
+    <p class= "center">Ingresa el ID de la carpeta de los alumnos</p>
+    <input class="col s12 m8" type="text" ng-model="$ctrl.folder">
     <button style="float: right" class="waves-effect waves-light btn">Generar Gafetes</button>
 </form>
 <br><br><br><br><br><br><br><br>
@@ -10,7 +11,7 @@
 
 <div class="gaf" id="nom" ng-repeat="student in $ctrl.student.responses">
     <img src="/app/assets/img/gafete.jpg" alt="" width="330" height="450" class="disenio">
-    <img class="foto" src="{{student.photo}}" alt="" height="100">
+    <img src="{{student.photo}}" alt="" height="100">
     <br>
     <div class="align-center">
         <h5 class="nombre">{{student.name}}</h5>

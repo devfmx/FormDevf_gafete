@@ -20,6 +20,7 @@
         function onInit() {
             vm.student = null;
             vm.dex;
+            vm.folder;
             vm.search = dosearch;
 
             function dosearch() {
@@ -36,17 +37,17 @@
                     }
                 })
 
-                // Descargar la lista de archivos dentro de carpeta de fotos
-                DriveService.get(...).$promise.then(function(response) {
-                  for (file in response) {
-                    var numero = file.name; // DSC_123.jpg
-                    // usar regex para sacar solo "123"
-                    listaFotos[numero] = file.url;
-                  }
-                  if (listaAlumnos) {
-                    dibujarGafetes();
-                  }
-                })
+                //Descargar la lista de archivos dentro de carpeta de fotos
+                //  DriveService.get(...).$promise.then(function(response) {
+                //    for (file in response) {
+                //      var numero = file.name; // DSC_123.jpg
+                //      // usar regex para sacar solo "123"
+                //      listaFotos[numero] = file.url;
+                //    }
+                //    if (listaAlumnos) {
+                //      dibujarGafetes();
+                //    }
+                //  })
             }
 
             function dibujarGafetes() {
@@ -58,6 +59,5 @@
             }
         }
     }
-
-
+    
 })();

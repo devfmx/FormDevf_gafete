@@ -25,13 +25,13 @@
         vm.$onInit = onInit;
 
         function onInit() {
-          /*
-          vm.filesArray = DriveService.files.list({
-              q: 'trashed = false',
-              maxResults: 10,
-              fields: 'items/title'
+          
+          vm.filesArray = DriveService.files.list({            
+            q: "parents = '0B6mtATx8WQ2wQTJ4Q2QtUEgyMEE'",
+            //maxResults: 10,
+            fields: 'items/title, items/id' ,
           }, true).data;
-          */
+          
           vm.spreadsheet = DriveService.files.get({
             fileId: '1l_mK-q94U5eRfPER0CWVoHaGIKWd5ECLLJEaQGhUC4M'
           }).promise.then((resp)=>{console.log('Title: ' + resp.data.title)});
