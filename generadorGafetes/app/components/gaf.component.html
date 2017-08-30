@@ -11,7 +11,7 @@
 
 <div class="gaf" id="nom" ng-repeat="student in $ctrl.student">
     <img src="/app/assets/img/gafete.jpg" alt="" width="330" height="450" class="disenio">
-    <img ng-repeat="file in $ctrl.filesArray" src="https://drive.google.com/uc?export=view&id={{student.img}}" alt="" height="100">
+    <img class="foto" src="https://drive.google.com/uc?export=view&id={{student.id}}" alt="" height="100">
     <br>
     <div class="align-center">
         <h5 class="nombre">{{student.name}}</h5>

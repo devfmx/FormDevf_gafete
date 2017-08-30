@@ -7,16 +7,8 @@
     };
 
     angular
-        .module('gafApp', ['ngm.ngDrive'])
+        .module('gafApp')
         .component('gafGen', gafGen);
-
-    angular.module('ngm.ngDrive')
-        .provider('OauthService', ngDrive.Config)
-        .config(function (OauthServiceProvider) {
-            OauthServiceProvider.setScopes('https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.readonly');
-            OauthServiceProvider.setClientID('352484554989-k9pq3engsrbv8nrvh1bt7vkcj3imhsgf.apps.googleusercontent.com');
-            OauthServiceProvider.setTokenRefreshPolicy(ngDrive.TokenRefreshPolicy.ON_DEMAND);
-        });
 
     gafCtrl.$inject = ["gafApi", "DriveService"];
 
@@ -40,25 +32,27 @@
                     dex: vm.dex
                 }).$promise.then(function (response) {
                     listaAlumnos = response.responses;
+                    console.log(listaAlumnos);
                     if (listaAlumnos && listaFotos) {
                         dibujarGafetes(listaAlumnos, listaFotos);
                     }
                 })
 
                 //Descargar la lista de archivos dentro de carpeta de fotos
-                DriveService.list({
+                DriveService.files.list({
                     q: "parents = '0B6XOavmaOXLAMGkzWFRFTTBMTUk'",
                     //maxResults: 10,
                     fields: 'items/title, items/id',
-                }, true).$promise.then(function (response) {
-                    var patt = new RegExp("[0-9]{4}");
-                    for (file in response) {
-                        var numero = patt.exec(file.title);
+                } ).promise.then(function (response) {
+                    var patt = new RegExp("[1-9][0-9]{2}");
+                    var files = response.data.items;
+                    for (var i = 0; i<files.length; i++) {
+                        var numero = patt.exec(files[i].title);
 
                         // usar regex para sacar solo "123"
-                        listaFotos[numero] = file.id;
+                        listaFotos[numero] = files[i].id;
                     }
-
+                    console.log(listaFotos);
                     if (listaAlumnos && listaFotos) {
                         dibujarGafetes(listaAlumnos, listaFotos);
                     }
@@ -67,9 +61,13 @@
 
             function dibujarGafetes(listaAlumnos, listaFotos) {
                 // juntar listaAlumnos y listaFotos
-                for (alumno in listaAlumnos) {
-                    alumno.id = listaFotos[alumno.img];
+                for(var e = 0; e<listaAlumnos.length; e++){
+                    listaAlumnos[e].id = listaFotos[listaAlumnos[e].img];
                 }
+
+                //for (var alumno in listaAlumnos) {
+                //    alumno.id = listaFotos[alumno.img];
+                //}
                 vm.student = listaAlumnos;
                 console.log(vm.student);
             }
