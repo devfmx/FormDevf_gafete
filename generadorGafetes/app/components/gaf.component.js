@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict'
 
     var gafGen = {
@@ -7,12 +7,20 @@
     };
 
     angular
-        .module('gafApp')
+        .module('gafApp', ['ngm.ngDrive'])
         .component('gafGen', gafGen);
 
-    gafCtrl.$inject = ["gafApi"];
+    angular.module('ngm.ngDrive')
+        .provider('OauthService', ngDrive.Config)
+        .config(function (OauthServiceProvider) {
+            OauthServiceProvider.setScopes('https://www.googleapis.com/auth/drive.file https://www.googleapis.com/auth/drive.readonly');
+            OauthServiceProvider.setClientID('352484554989-k9pq3engsrbv8nrvh1bt7vkcj3imhsgf.apps.googleusercontent.com');
+            OauthServiceProvider.setTokenRefreshPolicy(ngDrive.TokenRefreshPolicy.ON_DEMAND);
+        });
 
-    function gafCtrl(gafApi) {
+    gafCtrl.$inject = ["gafApi", "DriveService"];
+
+    function gafCtrl(gafApi, DriveService) {
         var vm = this;
 
         vm.$onInit = onInit;
@@ -30,34 +38,42 @@
                 //
                 vm.apiData = gafApi.get({
                     dex: vm.dex
-                }).$promise.then(function(response) {
-                    listaAlumnos = response;
-                    if (listaFotos) {
-                      dibujarGafetes();
+                }).$promise.then(function (response) {
+                    listaAlumnos = response.responses;
+                    if (listaAlumnos && listaFotos) {
+                        dibujarGafetes(listaAlumnos, listaFotos);
                     }
                 })
 
                 //Descargar la lista de archivos dentro de carpeta de fotos
-                //  DriveService.get(...).$promise.then(function(response) {
-                //    for (file in response) {
-                //      var numero = file.name; // DSC_123.jpg
-                //      // usar regex para sacar solo "123"
-                //      listaFotos[numero] = file.url;
-                //    }
-                //    if (listaAlumnos) {
-                //      dibujarGafetes();
-                //    }
-                //  })
+                DriveService.list({
+                    q: "parents = '0B6XOavmaOXLAMGkzWFRFTTBMTUk'",
+                    //maxResults: 10,
+                    fields: 'items/title, items/id',
+                }, true).$promise.then(function (response) {
+                    var patt = new RegExp("[0-9]{4}");
+                    for (file in response) {
+                        var numero = patt.exec(file.title);
+
+                        // usar regex para sacar solo "123"
+                        listaFotos[numero] = file.id;
+                    }
+
+                    if (listaAlumnos && listaFotos) {
+                        dibujarGafetes(listaAlumnos, listaFotos);
+                    }
+                })
             }
 
-            function dibujarGafetes() {
-              // juntar listaAlumnos y listaFotos
-              for (alumno in listaAlumnos) {
-                alumno.foto = listaFotos[alumno.foto];
-              }
-              vm.student = listaAlumnos;
+            function dibujarGafetes(listaAlumnos, listaFotos) {
+                // juntar listaAlumnos y listaFotos
+                for (alumno in listaAlumnos) {
+                    alumno.id = listaFotos[alumno.img];
+                }
+                vm.student = listaAlumnos;
+                console.log(vm.student);
             }
         }
     }
-    
+
 })();
