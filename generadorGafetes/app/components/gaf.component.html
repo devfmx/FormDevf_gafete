@@ -1,21 +1,21 @@
-<h4 class="center">Ingresa el ID del archivo Google Spreadsheets</h4>
-
 <form class="container" ng-submit="$ctrl.search()">
+    <p class= "center">Ingresa el ID del archivo Google Spreadsheets</p>
     <input class="col s12 m8" type="text" ng-model="$ctrl.dex">
+    <!-- <p class= "center">Ingresa el ID de la carpeta de los alumnos</p>
+    <input class="col s12 m8" type="text" ng-model="$ctrl.folder"> -->
     <button style="float: right" class="waves-effect waves-light btn">Generar Gafetes</button>
 </form>
 <br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 <br><br><br><br><br><br><br><br>
 
-<div class="gaf" id="nom" ng-repeat="student in $ctrl.student.responses">
-    <img src="/app/assets/img/gafete.jpg" alt="" width="330" height="450" class="disenio">
-    <img class="foto" src="{{student.photo}}" alt="" height="100">
+<div class="gaf" id="nom" ng-repeat="student in $ctrl.student">
+    <div>
+      <img class="foto" src="https://drive.google.com/uc?export=view&id={{student.id}}" alt="" height="100">
+    </div>
     <br>
-    <div class="align-center">
+    <div class="nombre_div">
         <h5 class="nombre">{{student.name}}</h5>
         <h5 class="apellido">{{student.last_name}}</h5>
     </div>
-    <p class="marca">{{student.marca}}</p>
-    <p class="serie">{{student.serie}}</p>
 </div>

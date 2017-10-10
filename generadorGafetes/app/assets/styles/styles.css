@@ -1,60 +1,64 @@
     .gaf {
         display: inline-block;
+        background-image: url("/app/assets/img/gafete.jpg");
+        background-repeat: no-repeat;
+        -webkit-print-color-adjust: exact;
         width: 330px;
         height: 450px;
         margin: 10px;
     }
-    
+
     @font-face {
         font-family: 'HELVETICA-BOLD';
         src: url(../fonts/HelveticaLTStd-Bold.otf);
     }
-    
+
     @font-face {
         font-family: 'HELVETICA-LIGHT';
         src: url(../fonts/HelveticaLTStd-Light.otf);
     }
-    
+
     .disenio {
         position: absolute;
         z-index: -1;
     }
-    
+
     .foto {
-        position: absolute;
         object-fit: cover;
         width: 120px;
         height: 120px;
         z-index: 0;
         margin-left: 100px;
         margin-top: 30px;
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
     }
-    
+
+    .nombre_div {
+      text-align: left;
+      height: 80;
+      width: 310px;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
     .nombre {
-        text-align: center;
-        position: absolute;
         z-index: 1;
-        margin-left: 3px;
-        margin-top: 140px;
-        font-size: 29px;
+        font-size: 34px;
         font-family: 'HELVETICA-BOLD';
         color: white;
         text-transform: uppercase;
+        text-overflow: clip;
+        margin: 0 0 0 0;
     }
-    
+
     .apellido {
-        text-align: center;
-        position: absolute;
         z-index: 1;
-        margin-top: 175px;
-        font-size: 29px;
+        font-size: 26px;
         font-family: 'HELVETICA-BOLD';
         color: white;
-        margin-left: 3px;
-        text-transform: uppercase;
+        margin: 0 0 0 0;
     }
-    
+
     .marca {
         position: absolute;
         z-index: 1;
@@ -64,7 +68,7 @@
         text-transform: uppercase;
         /*text-align: center;*/
     }
-    
+
     .serie {
         position: absolute;
         z-index: 1;
@@ -74,7 +78,7 @@
         text-align: center;
         text-transform: uppercase;
     }
-    
+
     .box {
         text-align: center;
         width: 300px;
