@@ -42,6 +42,6 @@ Deben mostrarse 4 gafetes por hoja.
 1) Imprimir a PDF, poner en un USB
 1) Imprimir en color en papel/cartulina gruesa (en Office Depot tienen papel tipo "Cougar" que viene en 14 pesos la hoja ya impresa en color)
 1) Una vez impresa, corta cada hoja para tener cada gafete sin nada de borde (Office Depot me prestó la guillotina para hacerlo)
-1) Pide que enmican los gafetes con enmicado grueso, dejando un espacio de ~2 centimetros arriba de cada gafete para hacer el hoyo para el cordón
+1) Pide que enmican los gafetes con enmicado grueso, dejando un espacio de ~2 centimetros arriba de cada gafete para hacer el hoyo para el cordón (en Office Depot esto costó 17 pesos la hoja, y acomodamos 5 gafetes por hoja de enmicado)
 1) Otra vez cortar cada gafete con la guillotina, dejando ese espacio blanco para el hoyo del cordón
 1) Pide el agujero para poner el hoyo en la parta transparente arriba
