@@ -28,50 +28,45 @@
         z-index: 0;
         margin-left: 100px;
         margin-top: 30px;
-        filter: grayscale(100%);
     }
     
     .nombre {
-        text-align: center;
-        position: absolute;
+        position: inline;
         z-index: 1;
-        margin-left: 3px;
+        /*margin-left: 3px;*/
         margin-top: 140px;
-        font-size: 29px;
+        font-size: 33px;
         font-family: 'HELVETICA-BOLD';
         color: white;
         text-transform: uppercase;
     }
     
     .apellido {
-        text-align: center;
-        position: absolute;
+        position: inline;
         z-index: 1;
-        margin-top: 175px;
-        font-size: 29px;
+        /*margin-top: 175px;*/
+        font-size: 25px;
         font-family: 'HELVETICA-BOLD';
         color: white;
-        margin-left: 3px;
+        /*margin-left: 3px;*/
         text-transform: uppercase;
     }
     
     .marca {
-        position: absolute;
+        position: inline;
         z-index: 1;
         margin-left: 105px;
-        margin-top: 246px;
+        margin-top: 30px;
         font-family: 'HELVETICA-LIGHT';
         text-transform: uppercase;
-        /*text-align: center;*/
     }
     
     .serie {
-        position: absolute;
+        position: inline;
         z-index: 1;
         margin-left: 103px;
-        margin-top: 290px;
+        margin-top: 23px;
         font-family: 'HELVETICA-LIGHT';
-        text-align: center;
         text-transform: uppercase;
     }
     
@@ -83,4 +78,8 @@
         color: white;
         padding: 25px;
         margin: 25px;
+    }
+
+    .fullname{
+        text-align: center;
     }
