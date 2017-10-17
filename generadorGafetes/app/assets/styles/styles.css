@@ -1,85 +1,106 @@
-    .gaf {
-        display: inline-block;
-        width: 330px;
-        height: 450px;
-        margin: 10px;
-    }
-    
-    @font-face {
-        font-family: 'HELVETICA-BOLD';
-        src: url(../fonts/HelveticaLTStd-Bold.otf);
-    }
-    
-    @font-face {
-        font-family: 'HELVETICA-LIGHT';
-        src: url(../fonts/HelveticaLTStd-Light.otf);
-    }
-    
-    .disenio {
-        position: absolute;
-        z-index: -1;
-    }
-    
-    .foto {
-        position: absolute;
-        object-fit: cover;
-        width: 120px;
-        height: 120px;
-        z-index: 0;
-        margin-left: 100px;
-        margin-top: 30px;
-    }
-    
-    .nombre {
-        position: inline;
-        z-index: 1;
-        /*margin-left: 3px;*/
-        margin-top: 140px;
-        font-size: 33px;
-        font-family: 'HELVETICA-BOLD';
-        color: white;
-        text-transform: uppercase;
-    }
-    
-    .apellido {
-        position: inline;
-        z-index: 1;
-        /*margin-top: 175px;*/
-        font-size: 25px;
-        font-family: 'HELVETICA-BOLD';
-        color: white;
-        /*margin-left: 3px;*/
-        text-transform: uppercase;
-    }
-    
-    .marca {
-        position: inline;
-        z-index: 1;
-        margin-left: 105px;
-        margin-top: 30px;
-        font-family: 'HELVETICA-LIGHT';
-        text-transform: uppercase;
-    }
-    
-    .serie {
-        position: inline;
-        z-index: 1;
-        margin-left: 103px;
-        margin-top: 23px;
-        font-family: 'HELVETICA-LIGHT';
-        text-transform: uppercase;
-    }
-    
-    .box {
-        text-align: center;
-        width: 300px;
-        border: 10px solid green;
-        font-family: 'HELVETICA-BOLD';
-        color: white;
-        padding: 25px;
-        margin: 25px;
-    }
+  body{
+    background: linear-gradient(120grad, #8ca1e3, #00e3bb);
+  }
 
-    .fullname{
-        text-align: center;
-    }
+  select {
+      display: inline-block !important;
+      width: 20% !important;
+      border: 1px solid black !important;
+  }
+  
+  .gaf {
+      display: inline-block;
+      width: 330px;
+      height: 450px;
+      margin: 10px;
+  }
+  
+  @font-face {
+      font-family: 'HELVETICA-BOLD';
+      src: url(../fonts/HelveticaLTStd-Bold.otf);
+  }
+  
+  @font-face {
+      font-family: 'HELVETICA-LIGHT';
+      src: url(../fonts/HelveticaLTStd-Light.otf);
+  }
+  
+  .disenio {
+      position: absolute;
+      z-index: -1;
+  }
+  
+  .foto {
+      position: absolute;
+      object-fit: cover;
+      width: 120px;
+      height: 120px;
+      z-index: 0;
+      margin-left: 100px;
+      margin-top: 30px;
+  }
+  
+  .nombre {
+      position: inline;
+      z-index: 1;
+      /*margin-left: 3px;*/
+      margin-top: 140px;
+      font-size: 33px;
+      font-family: 'HELVETICA-BOLD';
+      color: white;
+      text-transform: uppercase;
+  }
+  
+  .apellido {
+      position: inline;
+      z-index: 1;
+      /*margin-top: 175px;*/
+      font-size: 25px;
+      font-family: 'HELVETICA-BOLD';
+      color: white;
+      /*margin-left: 3px;*/
+      text-transform: uppercase;
+  }
+  
+  .marca {
+      position: inline;
+      z-index: 1;
+      margin-left: 105px;
+      margin-top: 30px;
+      font-family: 'HELVETICA-LIGHT';
+      text-transform: uppercase;
+  }
+  
+  .serie {
+      position: inline;
+      z-index: 1;
+      margin-left: 103px;
+      margin-top: 23px;
+      font-family: 'HELVETICA-LIGHT';
+      text-transform: uppercase;
+  }
+
+  .batch {
+    color: white;
+    position: inline;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 35px;
+    font-family: 'HELVETICA-LIGHT';
+    text-transform: uppercase;
+}
+  
+  .box {
+      text-align: center;
+      width: 300px;
+      border: 10px solid green;
+      font-family: 'HELVETICA-BOLD';
+      color: white;
+      padding: 25px;
+      margin: 25px;
+  }
+  
+  .fullname {
+      text-align: center;
+  }

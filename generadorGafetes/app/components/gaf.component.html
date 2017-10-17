@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="col s12 m7">
+        <div class="card horizontal">
+            <form class="container" ng-submit="$ctrl.search()">
+                <h5 class="center">Generador de Gafetes</h5>
+                <p>ID Spreadsheet</p>
+                <input class="col s12 m8" type="text" ng-model="$ctrl.dex">
+                <p>ID Folder</p>
+                <input class="col s12 m8" type="text" ng-model="">
+                <p>Sheet</p>
+                <input class="col s12 m8" type="text" ng-model="">
+                <p>Batch</p>
+                <input class="col s12 m8" type="text" ng-model="batch">
+                <button style="float: right" class="waves-effect blue darken-2 btn">Generar Gafetes</button>
+                <br><br><br>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="gaf" id="nom" ng-repeat="student in $ctrl.student | filter:search">
+    <img src="/app/assets/img/gafete.jpg" alt="" width="330" height="450" class="disenio">
+    <img class="foto" src="https://drive.google.com/uc?export=view&id={{student.id}}" alt="" height="100">
+    <br>
+    <div class="fullname">
+        <h5 class="nombre">{{student.name}}</h5>
+        <h5 class="apellido">{{student.last_name}}</h5>
+    </div>
+    <p class="marca">{{student.marca}}</p>
+    <p class="serie">{{student.serie}}</p>
+    <div class="batch">>{{batch}}</div>
+</div>

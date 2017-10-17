@@ -1,4 +1,4 @@
-(function () {
+(function() {
     'use strict'
 
     var gafGen = {
@@ -23,6 +23,11 @@
             vm.folder;
             vm.search = dosearch;
 
+            vm.data = {
+                cinta: null,
+            };
+
+
             function dosearch() {
                 var listaAlumnos = [];
                 var listaFotos = [];
@@ -30,7 +35,7 @@
                 //
                 vm.apiData = gafApi.get({
                     dex: vm.dex
-                }).$promise.then(function (response) {
+                }).$promise.then(function(response) {
                     listaAlumnos = response.responses;
                     console.log(listaAlumnos);
                     if (listaAlumnos && listaFotos) {
@@ -43,7 +48,7 @@
                     q: "parents = '0B6XOavmaOXLAMGkzWFRFTTBMTUk'",
                     //maxResults: 10,
                     fields: 'items/title, items/id',
-                }).promise.then(function (response) {
+                }).promise.then(function(response) {
                     var patt = new RegExp("[1-9][0-9]{2}");
                     var files = response.data.items;
                     for (var i = 0; i < files.length; i++) {
@@ -52,7 +57,6 @@
                         // usar regex para sacar solo "123"
                         listaFotos[numero] = files[i].id;
                     }
-                    console.log(listaFotos);
                     if (listaAlumnos && listaFotos) {
                         dibujarGafetes(listaAlumnos, listaFotos);
                     }
